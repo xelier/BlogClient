@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  background: antiquewhite;
+}
+.header .header-menu {
+  color: #282c34;
+  display: flex;
+  justify-content: center;
+  height: calc(100%);
+}
+.header .header-menu:hover {
+  color: #fff;
+  cursor: pointer;
+  background: #323232;
+  border-bottom: 4px solid #13daec;
+  transition: all 0.5s ease;
+}
+.header .header-menu .header-menu-home:after {
+  content: '首页';
+}
+/*# sourceMappingURL=Header.css.map */
