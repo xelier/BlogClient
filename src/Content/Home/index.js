@@ -1,6 +1,8 @@
 import {Component}from "react";
 import React from 'react';
 import {connect} from "react-redux";
+import {Col, Row} from "antd";
+import RightBar from "../RightBar";
 
 
 
@@ -12,9 +14,14 @@ class Home extends Component{
     }
     render() {
         return(
-            <div>
-                ?
-            </div>
+            <Row>
+                <Col span={16}>
+                    内容
+                </Col>
+                <Col span={7} offset={1} >
+                    <RightBar/>
+                </Col>
+            </Row>
         );
     }
 }

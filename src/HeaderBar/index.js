@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 import {handleMenuAction} from "../redux/action/action";
 
-class Header extends Component{
+class HeaderBar extends Component{
     constructor(props){
         super(props);
         this.state = {current:'1'};
@@ -63,4 +63,4 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect(mapStateToProps)(Header)
+export default connect(mapStateToProps)(HeaderBar)

@@ -1,5 +1,5 @@
 import Axios from "axios";
-export const HeaderAction = {
+export const Index = {
     getMenuItem(){
         return Axios.get(`/cfg/menu`)
     },

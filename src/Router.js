@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import App from "./App";
-import Home from "./Home";
-import Article from "./Article";
+import Home from "./Content/Home";
+import Article from "./Content/Article";
 // import App from "./App";
 
 export default class Router extends Component {
