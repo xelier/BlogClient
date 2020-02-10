@@ -7,7 +7,7 @@ class Article extends Component{
     render() {
         return(
             <div>
-                test1
+                旅行记
             </div>
         );
     }

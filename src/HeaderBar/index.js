@@ -12,7 +12,7 @@ class HeaderBar extends Component{
     }
 
     handleClick=e=>{
-        console.log( 'click ', e.key);
+        // console.log( 'click ', e.key);
         this.setState({current:e.key});
         const { dispatch } = this.props;
         dispatch(handleMenuAction(e.key));

@@ -3,6 +3,7 @@ import React from 'react';
 import {connect} from "react-redux";
 import {Col, Row} from "antd";
 import RightBar from "../RightBar";
+import HomeLeft from "../HomeLeft"
 
 
 
@@ -16,7 +17,7 @@ class Home extends Component{
         return(
             <Row>
                 <Col span={16}>
-                    内容
+                    <HomeLeft/>
                 </Col>
                 <Col span={7} offset={1} >
                     <RightBar/>
@@ -26,9 +27,9 @@ class Home extends Component{
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        CURRENT_MENU: state.CURRENT_MENU
-    }
-};
-export default connect(mapStateToProps)(Home);
+// const mapStateToProps = state => {
+//     return {
+//         CURRENT_MENU: state.CURRENT_MENU
+//     }
+// };
+export default connect()(Home);
