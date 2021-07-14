@@ -1,15 +1,18 @@
 import React, {Component} from "react";
-import {Menu} from "antd";
 import {menu} from "../config";
-import {connect} from "react-redux";
+import {Menu} from "antd";
 import {Link} from "react-router-dom";
 import {handleMenuAction} from "../redux/action/action";
+import {connect} from "react-redux";
 
-class HeaderBar extends Component{
+
+class LeftMenu extends Component {
+
     constructor(props){
         super(props);
         this.state = {current:'1'};
     }
+
 
     handleClick=e=>{
         // console.log( 'click ', e.key);
@@ -18,12 +21,13 @@ class HeaderBar extends Component{
         dispatch(handleMenuAction(e.key));
     };
 
+
     render() {
         const menuItem = menu;
         return(
             <Menu mode={"horizontal"} onClick={this.handleClick}>
                 {
-                menuItem && menuItem.length?(
+                    menuItem && menuItem.length?(
                         menuItem.map(item=>{
                             if (item.SUB_MENU){
                                 return (
@@ -53,14 +57,12 @@ class HeaderBar extends Component{
                     ):null
                 }
             </Menu>
-        );
+        )
     }
 }
-
 const mapStateToProps = state => {
     return {
         CURRENT_MENU: state.current
     }
 };
-
-export default connect(mapStateToProps)(HeaderBar)
+export default connect(mapStateToProps)(LeftMenu)

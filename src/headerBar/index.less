@@ -1,20 +1,31 @@
-.header{
+.header {
   width: 100%;
   background: antiquewhite;
-  .header-menu{
+
+  .header-menu {
     color: #282c34;
     display: flex;
     justify-content: center;
     height: calc(100%);
-    &:hover{
-      color:#fff;
+
+    &:hover {
+      color: #fff;
       cursor: pointer;
       background: rgb(50, 50, 50);
       border-bottom: 4px solid #13daec;
       transition: all .5s ease;
     }
-    .header-menu-home:after{
+
+    .header-menu-home:after {
       content: '首页'
     }
   }
+}
+
+.left-menu {
+  width: 80%;
+}
+
+.right-menu {
+  width: 20%;
 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.less';
-import HeaderBar from "./HeaderBar";
+import HeaderBar from "./headerBar";
 import {connect} from "react-redux";
 import {Layout} from "antd";
 const { Header, Content } = Layout;

@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 import {Card,  Col, Row} from "antd";
 import {connect} from "react-redux";
-import CommentBoard from "../../DashBoard/CommentBoard";
-import Summery from "../../DashBoard/Summery";
+import CommentBoard from "../../dashBoard/CommentBoard";
+import Summery from "../../dashBoard/Summery";
 import "./index.less";
-import CarouselBoard from "../../DashBoard/CarouselBoard";
+import CarouselBoard from "../../dashBoard/CarouselBoard";
 
 class HomeLeft extends Component{
     render() {
